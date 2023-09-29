@@ -52,9 +52,8 @@
     display: flex;
     justify-content: center;
     position: relative;
+    margin: 2.25em 0;
 }
-
-
 
 .button {
     background-color: var(--clr-purple);
@@ -67,6 +66,17 @@
 .button:hover {
     cursor: pointer;
     background-color: var(--clr-black);
+}
+
+.age-calculator {
+    font-size: var(--fz-big);
+    font-weight: var(--fw-extra-bold);
+    color: var(--clr-black);
+    line-height: 1.5;
+}
+
+.age-calculator span {
+    color: var(--clr-purple);
 }
 
 @media (min-width: 768px) {

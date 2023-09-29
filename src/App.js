@@ -38,9 +38,9 @@ function App() {
         <div className='button-wrapper'><button className='button'><img src={iconArrow}/></button></div>
 
         <div className='age-calculator'>
-          <p>{} years</p>
-          <p>3 months</p>
-          <p>26 days</p>
+          <p><span>{}</span> years</p>
+          <p><span>3</span> months</p>
+          <p><span>26</span> days</p>
         </div>
       </div>
     </div>
