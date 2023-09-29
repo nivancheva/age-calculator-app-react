@@ -33,8 +33,19 @@
     border: 2px solid var(--clr-off-white);
     font-weight: var(--fw-extra-bold);
     padding: .75em .75em;
-    width: 100%;
-    
+    width: 100%;    
+}
+
+.age-input.error label {
+    color: red;
+}
+
+.age-input.error input {
+    border-color: red;
+}
+
+.age-input.error p {
+    color: red;
 }
 
 .button-wrapper::before {
