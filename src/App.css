@@ -1,0 +1,45 @@
+.wraper {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--clr-white);
+    padding: 3em 1.75em;
+    border-radius: 1.125em;
+    border-bottom-right-radius: 5em;
+    max-width: 350px;
+
+    margin-inline: auto
+}
+
+.age-input-wraper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .75em
+}
+
+.age-input label {
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size: var(--fz-normal);
+}
+
+.age-input input {
+    display: block;
+    border-radius: .5em;
+    border: 2px solid var(--clr-off-white);
+    font-weight: var(--fw-extra-bold);
+    width: 5.5em;
+    padding: .75em .75em;
+}
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 850px;
+        width: 90%;
+    }
+}
