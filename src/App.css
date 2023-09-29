@@ -14,7 +14,7 @@
     margin-inline: auto
 }
 
-.age-input-wraper {
+.age-input-wrapper {
     display: flex;
     gap: .75em
 }
@@ -37,6 +37,39 @@
     
 }
 
+.button-wrapper::before {
+    content: '';
+    position: absolute;
+    display: block;
+    border: 1px solid var(--clr-off-white);
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.button-wrapper {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.button {
+    background-color: var(--clr-purple);
+    border: 0;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--clr-black);
+}
+
 @media (min-width: 768px) {
     .wrapper {
         display: grid;
@@ -49,7 +82,11 @@
         width: 90%;
     }
 
-    .age-input-wraper  {
+    .age-input-wrapper  {
         margin-right: 10em;
+    }
+
+    .button-wrapper {
+        justify-content: end;
     }
 }

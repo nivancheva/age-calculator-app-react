@@ -28,6 +28,7 @@
     --clr-black: hsl(0, 0%, 8%);
 
     --fz-big: 2rem;
+    --fz-normal: .75rem;
 
     --fw-regular: 400;
     --fw-bold: 700;
@@ -53,9 +54,17 @@ input, button, textarea, select {
     font: inherit;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 body {
     font-family: 'Poppins';
     font-style: italic;
     font-weight: 400;
+    background-color: var(--clr-off-white);
+    color: var(--clr-smokey-grey);
 }
